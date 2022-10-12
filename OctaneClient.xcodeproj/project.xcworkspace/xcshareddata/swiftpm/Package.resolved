@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "beet-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tokr-Labs/beet-swift",
+      "state" : {
+        "branch" : "bugfix/remove-xctest-dependency",
+        "revision" : "961846c1bb94ef3a81a25a896911095c996670a7"
+      }
+    },
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9aef09bf5c0274689a89c2fd71794011bebdc43f"
+      }
+    },
+    {
+      "identity" : "secp256k1.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Boilertalk/secp256k1.swift.git",
+      "state" : {
+        "revision" : "cd187c632fb812fd93711a9f7e644adb7e5f97f0",
+        "version" : "0.1.7"
+      }
+    },
+    {
+      "identity" : "solana.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tokr-Labs/Solana.Swift",
+      "state" : {
+        "branch" : "feature/mcgaryes_expose-sonala-pay",
+        "revision" : "033c4d10ff1ba439291d706bf7129fb446a9a06d"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "tweetnacl-swiftwrap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bitmark-inc/tweetnacl-swiftwrap.git",
+      "state" : {
+        "revision" : "f8fd111642bf2336b11ef9ea828510693106e954",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

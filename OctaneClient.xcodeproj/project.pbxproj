@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50DEEC0A28F7481A00DC3598 /* OctaneClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC0928F7481A00DC3598 /* OctaneClientApp.swift */; };
+		50DEEC0C28F7481A00DC3598 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC0B28F7481A00DC3598 /* ContentView.swift */; };
+		50DEEC0E28F7481A00DC3598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DEEC0D28F7481A00DC3598 /* Assets.xcassets */; };
+		50DEEC1128F7481A00DC3598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DEEC1028F7481A00DC3598 /* Preview Assets.xcassets */; };
+		50DEEC1C28F748B200DC3598 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC1B28F748B200DC3598 /* ContentViewModel.swift */; };
+		50DEEC2228F7490800DC3598 /* Beet in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2128F7490800DC3598 /* Beet */; };
+		50DEEC2528F7493A00DC3598 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2428F7493A00DC3598 /* Solana */; };
+		50DEEC2828F7495900DC3598 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2728F7495900DC3598 /* CodeScanner */; };
+		50DEEC2E28F74A1A00DC3598 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */; };
+		50DEEC3028F74AB200DC3598 /* OctaneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2F28F74AA800DC3598 /* OctaneService.swift */; };
+		50DEEC3328F74B2000DC3598 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3228F74B1D00DC3598 /* Delay.swift */; };
+		50DEEC3428F74C2E00DC3598 /* SolanaPaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */; };
+		50DEEC3728F74C9200DC3598 /* SolanaPayTransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */; };
+		50DEEC3928F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */; };
+		50DEEC3B28F7577400DC3598 /* TransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3A28F7577400DC3598 /* TransferError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50DEEC0628F7481A00DC3598 /* OctaneClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctaneClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DEEC0928F7481A00DC3598 /* OctaneClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaneClientApp.swift; sourceTree = "<group>"; };
+		50DEEC0B28F7481A00DC3598 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50DEEC0D28F7481A00DC3598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50DEEC1028F7481A00DC3598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50DEEC1B28F748B200DC3598 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPaySheet.swift; sourceTree = "<group>"; };
+		50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		50DEEC2F28F74AA800DC3598 /* OctaneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaneService.swift; sourceTree = "<group>"; };
+		50DEEC3228F74B1D00DC3598 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPayTransactionStatus.swift; sourceTree = "<group>"; };
+		50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPayTransactionInstructionStatus.swift; sourceTree = "<group>"; };
+		50DEEC3A28F7577400DC3598 /* TransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50DEEC0328F7481900DC3598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DEEC2528F7493A00DC3598 /* Solana in Frameworks */,
+				50DEEC2228F7490800DC3598 /* Beet in Frameworks */,
+				50DEEC2828F7495900DC3598 /* CodeScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50DEEBFD28F7481900DC3598 = {
+			isa = PBXGroup;
+			children = (
+				50DEEC0828F7481A00DC3598 /* OctaneClient */,
+				50DEEC0728F7481A00DC3598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50DEEC0728F7481A00DC3598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC0628F7481A00DC3598 /* OctaneClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50DEEC0828F7481A00DC3598 /* OctaneClient */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC1728F7486B00DC3598 /* Sources */,
+				50DEEC0D28F7481A00DC3598 /* Assets.xcassets */,
+				50DEEC0F28F7481A00DC3598 /* Preview Content */,
+			);
+			path = OctaneClient;
+			sourceTree = "<group>";
+		};
+		50DEEC0F28F7481A00DC3598 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC1028F7481A00DC3598 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50DEEC1728F7486B00DC3598 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC3528F74C8000DC3598 /* Models */,
+				50DEEC0928F7481A00DC3598 /* OctaneClientApp.swift */,
+				50DEEC1928F7489400DC3598 /* Services */,
+				50DEEC3128F74B0F00DC3598 /* Utilities */,
+				50DEEC1828F7488E00DC3598 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		50DEEC1828F7488E00DC3598 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC2A28F749D900DC3598 /* Components */,
+				50DEEC2B28F749EE00DC3598 /* Scenes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50DEEC1928F7489400DC3598 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC2F28F74AA800DC3598 /* OctaneService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50DEEC1A28F7489F00DC3598 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC0B28F7481A00DC3598 /* ContentView.swift */,
+				50DEEC1B28F748B200DC3598 /* ContentViewModel.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		50DEEC2A28F749D900DC3598 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		50DEEC2B28F749EE00DC3598 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC1A28F7489F00DC3598 /* Content */,
+				50DEEC2C28F749FF00DC3598 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		50DEEC2C28F749FF00DC3598 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		50DEEC3128F74B0F00DC3598 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC3228F74B1D00DC3598 /* Delay.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		50DEEC3528F74C8000DC3598 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */,
+				50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */,
+				50DEEC3A28F7577400DC3598 /* TransferError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50DEEC0528F7481900DC3598 /* OctaneClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DEEC1428F7481A00DC3598 /* Build configuration list for PBXNativeTarget "OctaneClient" */;
+			buildPhases = (
+				50DEEC0228F7481900DC3598 /* Sources */,
+				50DEEC0328F7481900DC3598 /* Frameworks */,
+				50DEEC0428F7481900DC3598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OctaneClient;
+			packageProductDependencies = (
+				50DEEC2128F7490800DC3598 /* Beet */,
+				50DEEC2428F7493A00DC3598 /* Solana */,
+				50DEEC2728F7495900DC3598 /* CodeScanner */,
+			);
+			productName = OctaneClient;
+			productReference = 50DEEC0628F7481A00DC3598 /* OctaneClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50DEEBFE28F7481900DC3598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					50DEEC0528F7481900DC3598 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 50DEEC0128F7481900DC3598 /* Build configuration list for PBXProject "OctaneClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50DEEBFD28F7481900DC3598;
+			packageReferences = (
+				50DEEC2028F7490800DC3598 /* XCRemoteSwiftPackageReference "beet-swift" */,
+				50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */,
+				50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = 50DEEC0728F7481A00DC3598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50DEEC0528F7481900DC3598 /* OctaneClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50DEEC0428F7481900DC3598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DEEC1128F7481A00DC3598 /* Preview Assets.xcassets in Resources */,
+				50DEEC0E28F7481A00DC3598 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50DEEC0228F7481900DC3598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DEEC0C28F7481A00DC3598 /* ContentView.swift in Sources */,
+				50DEEC2E28F74A1A00DC3598 /* SettingsView.swift in Sources */,
+				50DEEC3928F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift in Sources */,
+				50DEEC3B28F7577400DC3598 /* TransferError.swift in Sources */,
+				50DEEC3728F74C9200DC3598 /* SolanaPayTransactionStatus.swift in Sources */,
+				50DEEC3428F74C2E00DC3598 /* SolanaPaySheet.swift in Sources */,
+				50DEEC0A28F7481A00DC3598 /* OctaneClientApp.swift in Sources */,
+				50DEEC3328F74B2000DC3598 /* Delay.swift in Sources */,
+				50DEEC1C28F748B200DC3598 /* ContentViewModel.swift in Sources */,
+				50DEEC3028F74AB200DC3598 /* OctaneService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50DEEC1228F7481A00DC3598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50DEEC1328F7481A00DC3598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50DEEC1528F7481A00DC3598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OctaneClient/Preview Content\"";
+				DEVELOPMENT_TEAM = V8CHF5249T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses camera for scanning.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhove.OctaneClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		50DEEC1628F7481A00DC3598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OctaneClient/Preview Content\"";
+				DEVELOPMENT_TEAM = V8CHF5249T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses camera for scanning.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhove.OctaneClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50DEEC0128F7481900DC3598 /* Build configuration list for PBXProject "OctaneClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DEEC1228F7481A00DC3598 /* Debug */,
+				50DEEC1328F7481A00DC3598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50DEEC1428F7481A00DC3598 /* Build configuration list for PBXNativeTarget "OctaneClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DEEC1528F7481A00DC3598 /* Debug */,
+				50DEEC1628F7481A00DC3598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50DEEC2028F7490800DC3598 /* XCRemoteSwiftPackageReference "beet-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tokr-Labs/beet-swift";
+			requirement = {
+				branch = "bugfix/remove-xctest-dependency";
+				kind = branch;
+			};
+		};
+		50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tokr-Labs/Solana.Swift";
+			requirement = {
+				branch = "feature/mcgaryes_expose-sonala-pay";
+				kind = branch;
+			};
+		};
+		50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50DEEC2128F7490800DC3598 /* Beet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50DEEC2028F7490800DC3598 /* XCRemoteSwiftPackageReference "beet-swift" */;
+			productName = Beet;
+		};
+		50DEEC2428F7493A00DC3598 /* Solana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */;
+			productName = Solana;
+		};
+		50DEEC2728F7495900DC3598 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 50DEEBFE28F7481900DC3598 /* Project object */;
+}
