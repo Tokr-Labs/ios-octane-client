@@ -10,15 +10,6 @@
       }
     },
     {
-      "identity" : "codescanner",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/twostraws/CodeScanner",
-      "state" : {
-        "branch" : "main",
-        "revision" : "9aef09bf5c0274689a89c2fd71794011bebdc43f"
-      }
-    },
-    {
       "identity" : "secp256k1.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Boilertalk/secp256k1.swift.git",
@@ -30,10 +21,10 @@
     {
       "identity" : "solana.swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Tokr-Labs/Solana.Swift",
+      "location" : "https://github.com/ajamaica/Solana.Swift",
       "state" : {
-        "branch" : "feature/mcgaryes_expose-sonala-pay",
-        "revision" : "033c4d10ff1ba439291d706bf7129fb446a9a06d"
+        "branch" : "master",
+        "revision" : "2e39f78bb7fa25967bbd51dcac24a3c5510f675a"
       }
     },
     {

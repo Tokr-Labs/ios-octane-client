@@ -16,8 +16,6 @@ struct ContentView: View {
     
     // MARK: - Internal API
     
-    @AppStorage("simulatedScannerData") var simulatedScannerData = ""
-    
     @StateObject var viewModel = ContentViewModel()
     
     // MARK: Internal Properties
@@ -31,33 +29,24 @@ struct ContentView: View {
                 Text("Last Transaction Signature:")
                     .font(.system(.headline))
                 
-                if viewModel.transactionSignature != nil {
-                    
-                    Text(viewModel.transactionSignature!)
-                        .textSelection(.enabled)
-                    
+                Text(try! AttributedString(markdown:
+                    viewModel.transactionSignature != nil ? "https://explorer.solana.com/tx/\(viewModel.transactionSignature!)?cluster=devnet" : "--"))
+
+                if !viewModel.isSendingTransaction {
+                    Button {
+                        viewModel.send()
+                    } label: {
+                        Text("Send Transaction")
+                    }
                 } else {
-                    
-                    Text("--")
-                    
+                    ProgressView().progressViewStyle(.circular)
                 }
+                
                 
             }
             .padding(24)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                
-                ToolbarItem(
-                    placement: .navigationBarTrailing
-                ) {
-
-                    Button {
-                        isPresentingScanner = true
-                    } label: {
-                        Image(systemName: "qrcode.viewfinder")
-                    }
-
-                }
                 
                 ToolbarItem(
                     placement: .navigationBarTrailing
@@ -75,85 +64,8 @@ struct ContentView: View {
             
         }
         
-        .sheet(
-            isPresented: $isPresentingScanner,
-            onDismiss: {
-                isPresentingScanner = false
-            }
-        ) {
-            
-            NavigationStack {
-                
-                CodeScannerView(codeTypes: [.qr], simulatedData: simulatedScannerData) { response in
-                
-                    isPresentingScanner = false
-                    
-                    if case let .success(result) = response {
-                        viewModel.handleSolanaPayUrl(result.string)
-                    }
-                    
-                }
-                .edgesIgnoringSafeArea(.bottom)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    
-                    ToolbarItem(
-                        placement: .navigationBarTrailing
-                    ) {
-                        
-                        Button {
-                            isPresentingScanner = false
-                        } label: {
-                            Image(systemName: "xmark")
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        .sheet(isPresented: $isPresentingSolanaPaySpecificationData) {
-            
-            SolanaPaySheet(
-                status: viewModel.transactionStatus ?? .initial,
-                specification: viewModel.solanaPaySpecification,
-                approve: {
-                    viewModel.approveTransaction()
-                },
-                dismiss: {
-                    isPresentingSolanaPaySpecificationData = false
-                }
-            )
-            .padding(24)
-            .presentationDetents([.height(300)])
-            .presentationDragIndicator(.visible)
-            
-        }
-        .onReceive(viewModel.$solanaPaySpecification) { output in
-            if output != nil {
-                isPresentingSolanaPaySpecificationData = true
-            }
-        }
-        
-        
     }
-    
-    // ============================================================
-    // === Private API ============================================
-    // ============================================================
-    
-    // MARK: - Private API
-    
-    // MARK: Private Properties
-    
-    @State private var scannedCode = ""
-    @State private var isPresentingScanner = false
-    @State private var isPresentingSolanaPaySpecificationData = false
-    
-    // MARK: Private Methods
-    
+   
 }
 
 struct ContentView_Previews: PreviewProvider {

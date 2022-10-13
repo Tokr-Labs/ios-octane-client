@@ -13,15 +13,9 @@
 		50DEEC1128F7481A00DC3598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DEEC1028F7481A00DC3598 /* Preview Assets.xcassets */; };
 		50DEEC1C28F748B200DC3598 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC1B28F748B200DC3598 /* ContentViewModel.swift */; };
 		50DEEC2228F7490800DC3598 /* Beet in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2128F7490800DC3598 /* Beet */; };
-		50DEEC2528F7493A00DC3598 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2428F7493A00DC3598 /* Solana */; };
-		50DEEC2828F7495900DC3598 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC2728F7495900DC3598 /* CodeScanner */; };
 		50DEEC2E28F74A1A00DC3598 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */; };
 		50DEEC3028F74AB200DC3598 /* OctaneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2F28F74AA800DC3598 /* OctaneService.swift */; };
-		50DEEC3328F74B2000DC3598 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3228F74B1D00DC3598 /* Delay.swift */; };
-		50DEEC3428F74C2E00DC3598 /* SolanaPaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */; };
-		50DEEC3728F74C9200DC3598 /* SolanaPayTransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */; };
-		50DEEC3928F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */; };
-		50DEEC3B28F7577400DC3598 /* TransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DEEC3A28F7577400DC3598 /* TransferError.swift */; };
+		50DEEC3E28F859D300DC3598 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 50DEEC3D28F859D300DC3598 /* Solana */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +25,8 @@
 		50DEEC0D28F7481A00DC3598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50DEEC1028F7481A00DC3598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50DEEC1B28F748B200DC3598 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPaySheet.swift; sourceTree = "<group>"; };
 		50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		50DEEC2F28F74AA800DC3598 /* OctaneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaneService.swift; sourceTree = "<group>"; };
-		50DEEC3228F74B1D00DC3598 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
-		50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPayTransactionStatus.swift; sourceTree = "<group>"; };
-		50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaPayTransactionInstructionStatus.swift; sourceTree = "<group>"; };
-		50DEEC3A28F7577400DC3598 /* TransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DEEC2528F7493A00DC3598 /* Solana in Frameworks */,
+				50DEEC3E28F859D300DC3598 /* Solana in Frameworks */,
 				50DEEC2228F7490800DC3598 /* Beet in Frameworks */,
-				50DEEC2828F7495900DC3598 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,10 +79,8 @@
 		50DEEC1728F7486B00DC3598 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				50DEEC3528F74C8000DC3598 /* Models */,
 				50DEEC0928F7481A00DC3598 /* OctaneClientApp.swift */,
 				50DEEC1928F7489400DC3598 /* Services */,
-				50DEEC3128F74B0F00DC3598 /* Utilities */,
 				50DEEC1828F7488E00DC3598 /* Views */,
 			);
 			path = Sources;
@@ -103,7 +89,6 @@
 		50DEEC1828F7488E00DC3598 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				50DEEC2A28F749D900DC3598 /* Components */,
 				50DEEC2B28F749EE00DC3598 /* Scenes */,
 			);
 			path = Views;
@@ -126,14 +111,6 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
-		50DEEC2A28F749D900DC3598 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				50DEEC2928F749D300DC3598 /* SolanaPaySheet.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		50DEEC2B28F749EE00DC3598 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,24 +126,6 @@
 				50DEEC2D28F74A1A00DC3598 /* SettingsView.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		50DEEC3128F74B0F00DC3598 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				50DEEC3228F74B1D00DC3598 /* Delay.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		50DEEC3528F74C8000DC3598 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				50DEEC3628F74C9200DC3598 /* SolanaPayTransactionStatus.swift */,
-				50DEEC3828F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift */,
-				50DEEC3A28F7577400DC3598 /* TransferError.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +146,7 @@
 			name = OctaneClient;
 			packageProductDependencies = (
 				50DEEC2128F7490800DC3598 /* Beet */,
-				50DEEC2428F7493A00DC3598 /* Solana */,
-				50DEEC2728F7495900DC3598 /* CodeScanner */,
+				50DEEC3D28F859D300DC3598 /* Solana */,
 			);
 			productName = OctaneClient;
 			productReference = 50DEEC0628F7481A00DC3598 /* OctaneClient.app */;
@@ -220,8 +178,7 @@
 			mainGroup = 50DEEBFD28F7481900DC3598;
 			packageReferences = (
 				50DEEC2028F7490800DC3598 /* XCRemoteSwiftPackageReference "beet-swift" */,
-				50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */,
-				50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				50DEEC3C28F859D300DC3598 /* XCRemoteSwiftPackageReference "Solana" */,
 			);
 			productRefGroup = 50DEEC0728F7481A00DC3598 /* Products */;
 			projectDirPath = "";
@@ -251,12 +208,7 @@
 			files = (
 				50DEEC0C28F7481A00DC3598 /* ContentView.swift in Sources */,
 				50DEEC2E28F74A1A00DC3598 /* SettingsView.swift in Sources */,
-				50DEEC3928F755DA00DC3598 /* SolanaPayTransactionInstructionStatus.swift in Sources */,
-				50DEEC3B28F7577400DC3598 /* TransferError.swift in Sources */,
-				50DEEC3728F74C9200DC3598 /* SolanaPayTransactionStatus.swift in Sources */,
-				50DEEC3428F74C2E00DC3598 /* SolanaPaySheet.swift in Sources */,
 				50DEEC0A28F7481A00DC3598 /* OctaneClientApp.swift in Sources */,
-				50DEEC3328F74B2000DC3598 /* Delay.swift in Sources */,
 				50DEEC1C28F748B200DC3598 /* ContentViewModel.swift in Sources */,
 				50DEEC3028F74AB200DC3598 /* OctaneService.swift in Sources */,
 			);
@@ -477,19 +429,11 @@
 				kind = branch;
 			};
 		};
-		50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */ = {
+		50DEEC3C28F859D300DC3598 /* XCRemoteSwiftPackageReference "Solana" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Tokr-Labs/Solana.Swift";
+			repositoryURL = "https://github.com/ajamaica/Solana.Swift";
 			requirement = {
-				branch = "feature/mcgaryes_expose-sonala-pay";
-				kind = branch;
-			};
-		};
-		50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/CodeScanner";
-			requirement = {
-				branch = main;
+				branch = master;
 				kind = branch;
 			};
 		};
@@ -501,15 +445,10 @@
 			package = 50DEEC2028F7490800DC3598 /* XCRemoteSwiftPackageReference "beet-swift" */;
 			productName = Beet;
 		};
-		50DEEC2428F7493A00DC3598 /* Solana */ = {
+		50DEEC3D28F859D300DC3598 /* Solana */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 50DEEC2328F7493A00DC3598 /* XCRemoteSwiftPackageReference "Solana" */;
+			package = 50DEEC3C28F859D300DC3598 /* XCRemoteSwiftPackageReference "Solana" */;
 			productName = Solana;
-		};
-		50DEEC2728F7495900DC3598 /* CodeScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 50DEEC2628F7495900DC3598 /* XCRemoteSwiftPackageReference "CodeScanner" */;
-			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

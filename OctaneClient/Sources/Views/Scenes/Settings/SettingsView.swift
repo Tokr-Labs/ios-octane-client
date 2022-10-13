@@ -19,7 +19,6 @@ struct SettingsView: View {
     
     @AppStorage("secretkey") var secretKey = ""
     @AppStorage("feePayer") var feePayer = ""
-    @AppStorage("simulatedScannerData") var simulatedScannerData = ""
     @AppStorage("octaneServer") var octaneServer = ""
 
     var body: some View {
@@ -58,18 +57,7 @@ struct SettingsView: View {
             } footer: {
                 Text("This is the Public Key of the wallet being used to pay for the hot wallets transaction fees.")
             }
-            
-            Section {
-                TextField(text: $simulatedScannerData, axis: .vertical) {
-                    Text("Simulated Scanner Result")
-                }
-                .lineLimit(3...5)
-            } header: {
-                Text("Scanner Result")
-            } footer: {
-                Text("The solana: url to use while running the code on a simulator as we will not have access to the camera.")
-            }
-
+           
         }
         
     }
